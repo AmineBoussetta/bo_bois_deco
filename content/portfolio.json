@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "title": "Cuisine Sur Mesure",
+      "category": "residentiel",
+      "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80",
+      "alt": "Cuisine sur mesure en bois massif",
+      "order": 1,
+      "featured": false
+    },
+    {
+      "title": "Suite Parentale",
+      "category": "residentiel",
+      "image": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600&q=80",
+      "alt": "Chambre à coucher avec dressing intégré",
+      "order": 2,
+      "featured": false
+    },
+    {
+      "title": "Restaurant Le Jardin",
+      "category": "professionnel",
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80",
+      "alt": "Aménagement restaurant en bois",
+      "order": 3,
+      "featured": true
+    },
+    {
+      "title": "Salon & Bibliothèque",
+      "category": "residentiel",
+      "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80",
+      "alt": "Salon avec bibliothèque en bois",
+      "order": 4,
+      "featured": false
+    },
+    {
+      "title": "Terrasse & Pergola",
+      "category": "exterieur",
+      "image": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&q=80",
+      "alt": "Terrasse en bois avec pergola",
+      "order": 5,
+      "featured": false
+    },
+    {
+      "title": "Espace Bureau",
+      "category": "professionnel",
+      "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80",
+      "alt": "Bureau professionnel en bois",
+      "order": 6,
+      "featured": false
+    }
+  ]
+}

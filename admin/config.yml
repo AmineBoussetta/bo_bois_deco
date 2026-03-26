@@ -11,25 +11,30 @@ collections:
   # ===== RÉALISATIONS (Portfolio) =====
   - name: "portfolio"
     label: "Réalisations"
-    label_singular: "Réalisation"
     description: "Gérer les projets affichés dans la galerie"
-    folder: "content/portfolio"
-    create: true
-    slug: "{{slug}}"
-    sortable_fields: ["order", "title"]
-    fields:
-      - { name: "title", label: "Titre du projet", widget: "string", hint: "Ex: Cuisine Sur Mesure" }
-      - name: "category"
-        label: "Catégorie"
-        widget: "select"
-        options:
-          - { label: "Résidentiel", value: "residentiel" }
-          - { label: "Professionnel", value: "professionnel" }
-          - { label: "Extérieur", value: "exterieur" }
-      - { name: "image", label: "Photo du projet", widget: "image", hint: "JPEG recommandé, minimum 1200px de large" }
-      - { name: "alt", label: "Description de l'image", widget: "string", hint: "Décrivez l'image pour l'accessibilité" }
-      - { name: "order", label: "Ordre d'affichage", widget: "number", default: 0, hint: "Plus petit = affiché en premier" }
-      - { name: "featured", label: "Projet mis en avant (plus grand)", widget: "boolean", default: false }
+    files:
+      - name: "projects"
+        label: "Liste des réalisations"
+        file: "content/portfolio.json"
+        fields:
+          - name: "items"
+            label: "Projets"
+            label_singular: "Projet"
+            widget: "list"
+            allow_add: true
+            fields:
+              - { name: "title", label: "Titre du projet", widget: "string", hint: "Ex: Cuisine Sur Mesure" }
+              - name: "category"
+                label: "Catégorie"
+                widget: "select"
+                options:
+                  - { label: "Résidentiel", value: "residentiel" }
+                  - { label: "Professionnel", value: "professionnel" }
+                  - { label: "Extérieur", value: "exterieur" }
+              - { name: "image", label: "Photo du projet", widget: "image", hint: "JPEG recommandé, minimum 1200px de large" }
+              - { name: "alt", label: "Description de l'image", widget: "string", hint: "Décrivez l'image pour l'accessibilité" }
+              - { name: "order", label: "Ordre d'affichage", widget: "number", default: 0, hint: "Plus petit = affiché en premier" }
+              - { name: "featured", label: "Projet mis en avant (plus grand)", widget: "boolean", default: false }
 
   # ===== PARAMÈTRES DU SITE =====
   - name: "settings"

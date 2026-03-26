@@ -11,25 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
   loadSettings();
 });
 
-function parseFrontmatter(text) {
-  const match = text.match(/^---\n([\s\S]*?)\n---/);
-  if (!match) return null;
-  const data = {};
-  match[1].split('\n').forEach(line => {
-    const sep = line.indexOf(':');
-    if (sep === -1) return;
-    const key = line.slice(0, sep).trim();
-    let val = line.slice(sep + 1).trim();
-    if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
-      val = val.slice(1, -1);
-    }
-    if (val === 'true') val = true;
-    else if (val === 'false') val = false;
-    else if (!isNaN(val) && val !== '') val = Number(val);
-    data[key] = val;
-  });
-  return data;
-}
+const CATEGORY_LABELS = {
+  residentiel: 'Résidentiel',
+  professionnel: 'Professionnel',
+  exterieur: 'Extérieur'
+};
 
 async function loadAboutContent() {
   try {
@@ -65,35 +51,13 @@ async function loadAboutContent() {
 }
 
 async function loadPortfolioContent() {
-  const PORTFOLIO_FILES = [
-    'cuisine-sur-mesure',
-    'suite-parentale',
-    'restaurant-le-jardin',
-    'salon-bibliotheque',
-    'terrasse-pergola',
-    'espace-bureau'
-  ];
-
   try {
-    const items = [];
+    const res = await fetch('/content/portfolio.json');
+    if (!res.ok) return;
+    const data = await res.json();
 
-    const promises = PORTFOLIO_FILES.map(async (slug) => {
-      try {
-        const res = await fetch(`/content/portfolio/${slug}.md`);
-        if (!res.ok) return null;
-        const text = await res.text();
-        const data = parseFrontmatter(text);
-        if (data) data.slug = slug;
-        return data;
-      } catch {
-        return null;
-      }
-    });
-
-    const results = await Promise.all(promises);
-    results.forEach(item => { if (item) items.push(item); });
-
-    if (items.length === 0) return;
+    const items = data.items;
+    if (!items || items.length === 0) return;
 
     items.sort((a, b) => (a.order || 0) - (b.order || 0));
 
@@ -107,16 +71,10 @@ async function loadPortfolioContent() {
       div.className = `portfolio__item${item.featured ? ' portfolio__item--tall' : ''}`;
       div.dataset.category = item.category;
 
-      const categoryLabels = {
-        residentiel: 'Résidentiel',
-        professionnel: 'Professionnel',
-        exterieur: 'Extérieur'
-      };
-
       div.innerHTML = `
         <img src="${item.image}" alt="${item.alt || item.title}" loading="lazy">
         <div class="portfolio__item-overlay">
-          <span class="portfolio__item-category">${categoryLabels[item.category] || item.category}</span>
+          <span class="portfolio__item-category">${CATEGORY_LABELS[item.category] || item.category}</span>
           <h3 class="portfolio__item-title">${item.title}</h3>
         </div>
       `;
@@ -124,7 +82,6 @@ async function loadPortfolioContent() {
       grid.appendChild(div);
     });
 
-    // Re-initialize portfolio filtering and lightbox on the new items
     if (typeof window.initPortfolio === 'function') {
       window.initPortfolio();
     }
