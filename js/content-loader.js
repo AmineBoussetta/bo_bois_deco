@@ -59,8 +59,6 @@ async function loadPortfolioContent() {
     const items = data.items;
     if (!items || items.length === 0) return;
 
-    items.sort((a, b) => (a.order || 0) - (b.order || 0));
-
     const grid = document.getElementById('portfolioGrid');
     if (!grid) return;
 
