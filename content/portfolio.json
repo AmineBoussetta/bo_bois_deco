@@ -1,6 +1,14 @@
 {
   "items": [
     {
+      "order": -5,
+      "featured": false,
+      "title": "test",
+      "category": "residentiel",
+      "image": "/assets/images/uploads/orb1_cropped_processed_by_imagy.png",
+      "alt": "test test"
+    },
+    {
       "title": "Cuisine Sur Mesure",
       "category": "residentiel",
       "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80",
@@ -47,14 +55,6 @@
       "alt": "Bureau professionnel en bois",
       "order": 6,
       "featured": false
-    },
-    {
-      "order": -5,
-      "featured": false,
-      "title": "test",
-      "category": "residentiel",
-      "image": "/assets/images/uploads/orb1_cropped_processed_by_imagy.png",
-      "alt": "test test"
     }
   ]
 }
