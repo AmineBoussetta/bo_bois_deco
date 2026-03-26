@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bo Bois Deco — Menuiserie Bois & Décoration Sur Mesure | Maurice</title>
+  <meta name="description" content="Bo Bois Deco conçoit et réalise des aménagements sur mesure en bois à Maurice. Mobilier, cuisines, dressings, espaces professionnels — artisanat haut de gamme.">
+  <meta name="keywords" content="menuiserie bois, décoration intérieure, sur mesure, Maurice, ébénisterie, aménagement">
+  <meta name="author" content="Bo Bois Deco">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Bo Bois Deco — Menuiserie Bois & Décoration Sur Mesure">
+  <meta property="og:description" content="Des espaces uniques pensés pour durer. Conception, fabrication et installation de mobilier et d'aménagements sur mesure en bois.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Bo Bois Deco",
+    "description": "Conception, fabrication et installation de mobilier et d'aménagements sur mesure en bois.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pointe aux Piments",
+      "addressCountry": "MU"
+    },
+    "telephone": "+230 58 559 251",
+    "email": "contact.boboisdeco@gmail.com",
+    "url": "",
+    "image": "",
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#accueil" class="nav__logo">
+        <span class="nav__logo-text">Bo Bois Deco</span>
+      </a>
+
+      <nav class="nav__menu" id="navMenu">
+        <ul class="nav__list">
+          <li><a href="#accueil" class="nav__link nav__link--active">Accueil</a></li>
+          <li><a href="#a-propos" class="nav__link">À propos</a></li>
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#realisations" class="nav__link">Réalisations</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav__cta btn btn--primary">Demander un devis</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Ouvrir le menu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="accueil" data-section="hero">
+      <div class="hero__bg">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80" alt="Intérieur bois sur mesure par Bo Bois Deco" class="hero__bg-img" loading="eager">
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__content">
+        <h1 class="hero__title reveal">Des espaces uniques<br>pensés pour durer</h1>
+        <p class="hero__subtitle reveal reveal--delay-1">Décoration & Aménagement sur mesure en menuiserie bois</p>
+        <div class="hero__actions reveal reveal--delay-2">
+          <a href="#contact" class="btn btn--primary btn--lg">Nous contacter</a>
+          <a href="#realisations" class="btn btn--outline-light btn--lg">Nos réalisations</a>
+        </div>
+      </div>
+
+      <div class="hero__cards">
+        <div class="hero__card reveal reveal--delay-2">
+          <div class="hero__card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <span class="hero__card-label">Résidentiel</span>
+        </div>
+        <div class="hero__card reveal reveal--delay-3">
+          <div class="hero__card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="12.01"/></svg>
+          </div>
+          <span class="hero__card-label">Professionnel</span>
+        </div>
+        <div class="hero__card reveal reveal--delay-4">
+          <div class="hero__card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 14V2M9 18V8M1 22V16h6v6zm8 0V8h6v14zm8 0V2h6v20z"/></svg>
+          </div>
+          <span class="hero__card-label">Extérieur</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== À PROPOS ========== -->
+    <section class="about section" id="a-propos" data-section="about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__content">
+            <span class="section__tag reveal">À propos</span>
+            <h2 class="section__title reveal">Qui sommes-nous ?</h2>
+            <p class="about__text reveal">
+              Nous sommes une entreprise spécialisée dans la conception, la fabrication et l'installation de mobilier et d'aménagements sur mesure en bois. Nous accompagnons particuliers et professionnels dans la création d'espaces esthétiques, fonctionnels et durables, en mettant le bois au cœur de chaque projet.
+            </p>
+            <p class="about__text reveal">
+              Notre savoir-faire artisanal, allié à une approche moderne du design, nous permet de proposer des solutions personnalisées, adaptées aux besoins, aux usages et au style de chaque client.
+            </p>
+
+            <div class="about__values">
+              <div class="about__value reveal">
+                <h3 class="about__value-title">Notre Vision</h3>
+                <p>Nous croyons que chaque espace doit refléter la personnalité de ceux qui l'habitent ou l'utilisent. Le sur-mesure n'est pas un luxe, mais une réponse intelligente aux contraintes d'espace, de fonctionnalité et d'esthétique.</p>
+              </div>
+              <div class="about__value reveal">
+                <h3 class="about__value-title">Notre Objectif</h3>
+                <p>Créer des aménagements en bois qui traversent le temps, alliant élégance, solidité et confort d'utilisation au quotidien.</p>
+              </div>
+              <div class="about__value reveal">
+                <h3 class="about__value-title">Notre Approche</h3>
+                <p>Du premier échange à l'installation finale, nous assurons un accompagnement complet et personnalisé : écoute attentive, compréhension de vos usages, recherche de solutions esthétiques et fonctionnelles, fabrication maîtrisée et soignée.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__image reveal reveal--right">
+            <img src="https://images.unsplash.com/photo-1622021142947-da7dedc7c39a?w=800&q=80" alt="Artisan travaillant le bois" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="services section section--alt" id="services" data-section="services">
+      <div class="container">
+        <span class="section__tag reveal">Nos domaines d'expertise</span>
+        <h2 class="section__title reveal">Nos Services</h2>
+        <p class="section__subtitle reveal">Chaque réalisation est pensée pour optimiser l'espace et s'intégrer harmonieusement à votre intérieur.</p>
+
+        <div class="services__block reveal">
+          <div class="services__block-image">
+            <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80" alt="Chambre sur mesure en bois" loading="lazy">
+          </div>
+          <div class="services__block-content">
+            <h3 class="services__block-title">Aménagement Résidentiel</h3>
+            <p class="services__block-text">Nous concevons et réalisons des meubles et aménagements sur mesure pour tous les espaces de la maison.</p>
+            <ul class="services__list">
+              <li>
+                <strong>Chambre à coucher</strong>
+                <span>Lits sur mesure, dressings, placards, têtes de lit intégrées</span>
+              </li>
+              <li>
+                <strong>Cuisine</strong>
+                <span>Meubles de cuisine, rangements optimisés, plans de travail</span>
+              </li>
+              <li>
+                <strong>Salon & espaces de vie</strong>
+                <span>Meubles TV, bibliothèques, rangements, claustras décoratifs</span>
+              </li>
+              <li>
+                <strong>Espaces extérieurs</strong>
+                <span>Terrasses, pergolas, mobilier extérieur sur mesure</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="services__block services__block--reverse reveal">
+          <div class="services__block-image">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" alt="Restaurant aménagé en bois" loading="lazy">
+          </div>
+          <div class="services__block-content">
+            <h3 class="services__block-title">Aménagement Professionnel</h3>
+            <p class="services__block-text">Nous accompagnons les professionnels dans l'aménagement de leurs espaces de travail et d'accueil.</p>
+            <ul class="services__list">
+              <li>
+                <strong>Bureaux</strong>
+                <span>Espaces de travail fonctionnels et élégants</span>
+              </li>
+              <li>
+                <strong>Commerces</strong>
+                <span>Agencement de boutiques et espaces de vente</span>
+              </li>
+              <li>
+                <strong>Restaurants & Hôtels</strong>
+                <span>Mobilier et aménagement sur mesure pour l'hôtellerie</span>
+              </li>
+              <li>
+                <strong>Espaces d'accueil</strong>
+                <span>Réception, salles d'attente, espaces communs</span>
+              </li>
+            </ul>
+            <p class="services__block-note">Nos solutions allient image de marque, fonctionnalité et confort, tout en respectant les contraintes techniques et les délais.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MÉTHODE ========== -->
+    <section class="method section" id="methode" data-section="method">
+      <div class="container">
+        <span class="section__tag reveal">Comment nous travaillons</span>
+        <h2 class="section__title reveal">Notre Méthode</h2>
+        <p class="section__subtitle reveal">Une méthode claire pour garantir qualité, précision et sérénité.</p>
+
+        <div class="method__timeline">
+          <div class="method__step reveal reveal--stagger" data-step="1">
+            <div class="method__step-number">01</div>
+            <h3 class="method__step-title">Analyse</h3>
+            <p class="method__step-text">Analyse du besoin et prise de brief</p>
+          </div>
+          <div class="method__step reveal reveal--stagger" data-step="2">
+            <div class="method__step-number">02</div>
+            <h3 class="method__step-title">Design</h3>
+            <p class="method__step-text">Proposition de design et de solutions techniques</p>
+          </div>
+          <div class="method__step reveal reveal--stagger" data-step="3">
+            <div class="method__step-number">03</div>
+            <h3 class="method__step-title">Matériaux</h3>
+            <p class="method__step-text">Validation des matériaux et finitions</p>
+          </div>
+          <div class="method__step reveal reveal--stagger" data-step="4">
+            <div class="method__step-number">04</div>
+            <h3 class="method__step-title">Fabrication</h3>
+            <p class="method__step-text">Fabrication en atelier avec soin</p>
+          </div>
+          <div class="method__step reveal reveal--stagger" data-step="5">
+            <div class="method__step-number">05</div>
+            <h3 class="method__step-title">Installation</h3>
+            <p class="method__step-text">Livraison et installation sur site</p>
+          </div>
+          <div class="method__step reveal reveal--stagger" data-step="6">
+            <div class="method__step-number">06</div>
+            <h3 class="method__step-title">Suivi</h3>
+            <p class="method__step-text">Suivi et satisfaction client</p>
+          </div>
+        </div>
+
+        <div class="method__materials reveal">
+          <p>Nous sélectionnons avec soin des bois et matériaux de qualité afin d'assurer la longévité de nos réalisations : <strong>bois massifs et panneaux techniques</strong>, finitions huilées, vernies, laquées ou brutes. Chaque finition est choisie en fonction de l'usage, du style et de l'environnement du projet.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== RÉALISATIONS ========== -->
+    <section class="portfolio section section--alt" id="realisations" data-section="portfolio">
+      <div class="container">
+        <span class="section__tag reveal">Notre portfolio</span>
+        <h2 class="section__title reveal">Nos Réalisations</h2>
+        <p class="section__subtitle reveal">Découvrez une sélection de projets réalisés pour nos clients. Chaque projet illustre notre engagement pour le travail bien fait et le design sur mesure.</p>
+
+        <div class="portfolio__filters reveal">
+          <button class="portfolio__filter portfolio__filter--active" data-filter="all">Tous</button>
+          <button class="portfolio__filter" data-filter="residentiel">Résidentiel</button>
+          <button class="portfolio__filter" data-filter="professionnel">Professionnel</button>
+          <button class="portfolio__filter" data-filter="exterieur">Extérieur</button>
+        </div>
+
+        <div class="portfolio__grid" id="portfolioGrid">
+          <div class="portfolio__item" data-category="residentiel">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80" alt="Cuisine sur mesure en bois massif" loading="lazy">
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-category">Résidentiel</span>
+              <h3 class="portfolio__item-title">Cuisine Sur Mesure</h3>
+            </div>
+          </div>
+          <div class="portfolio__item" data-category="residentiel">
+            <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600&q=80" alt="Chambre à coucher avec dressing intégré" loading="lazy">
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-category">Résidentiel</span>
+              <h3 class="portfolio__item-title">Suite Parentale</h3>
+            </div>
+          </div>
+          <div class="portfolio__item portfolio__item--tall" data-category="professionnel">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Aménagement restaurant en bois" loading="lazy">
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-category">Professionnel</span>
+              <h3 class="portfolio__item-title">Restaurant Le Jardin</h3>
+            </div>
+          </div>
+          <div class="portfolio__item" data-category="residentiel">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Salon avec bibliothèque en bois" loading="lazy">
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-category">Résidentiel</span>
+              <h3 class="portfolio__item-title">Salon & Bibliothèque</h3>
+            </div>
+          </div>
+          <div class="portfolio__item" data-category="exterieur">
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&q=80" alt="Terrasse en bois avec pergola" loading="lazy">
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-category">Extérieur</span>
+              <h3 class="portfolio__item-title">Terrasse & Pergola</h3>
+            </div>
+          </div>
+          <div class="portfolio__item" data-category="professionnel">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Bureau professionnel en bois" loading="lazy">
+            <div class="portfolio__item-overlay">
+              <span class="portfolio__item-category">Professionnel</span>
+              <h3 class="portfolio__item-title">Espace Bureau</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox">
+        <button class="lightbox__close" aria-label="Fermer">&times;</button>
+        <button class="lightbox__prev" aria-label="Précédent">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="lightbox__next" aria-label="Suivant">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg>
+        </button>
+        <div class="lightbox__content">
+          <img src="" alt="" class="lightbox__img" id="lightboxImg">
+          <div class="lightbox__caption" id="lightboxCaption"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact section" id="contact" data-section="contact">
+      <div class="container">
+        <span class="section__tag reveal">Parlons de votre projet</span>
+        <h2 class="section__title reveal">Nous Contacter</h2>
+
+        <div class="contact__grid">
+          <form class="contact__form reveal" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form__group">
+              <label for="name" class="form__label">Nom complet</label>
+              <input type="text" id="name" name="name" class="form__input" placeholder="Votre nom" required>
+            </div>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="email" class="form__label">Email</label>
+                <input type="email" id="email" name="email" class="form__input" placeholder="votre@email.com" required>
+              </div>
+              <div class="form__group">
+                <label for="phone" class="form__label">Téléphone</label>
+                <input type="tel" id="phone" name="phone" class="form__input" placeholder="+230 XXXX XXXX">
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="project" class="form__label">Type de projet</label>
+              <select id="project" name="project" class="form__input form__select">
+                <option value="" disabled selected>Sélectionnez un type de projet</option>
+                <option value="residentiel-chambre">Résidentiel — Chambre</option>
+                <option value="residentiel-cuisine">Résidentiel — Cuisine</option>
+                <option value="residentiel-salon">Résidentiel — Salon</option>
+                <option value="residentiel-exterieur">Résidentiel — Extérieur</option>
+                <option value="professionnel-bureau">Professionnel — Bureau</option>
+                <option value="professionnel-commerce">Professionnel — Commerce</option>
+                <option value="professionnel-restaurant">Professionnel — Restaurant / Hôtel</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="message" class="form__label">Message</label>
+              <textarea id="message" name="message" class="form__input form__textarea" rows="5" placeholder="Décrivez votre projet..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg form__submit" id="formSubmit">
+              <span class="form__submit-text">Envoyer le message</span>
+              <span class="form__submit-loading" hidden>Envoi en cours...</span>
+            </button>
+            <div class="form__feedback" id="formFeedback"></div>
+          </form>
+
+          <div class="contact__info reveal reveal--right">
+            <div class="contact__info-block">
+              <div class="contact__info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h3>Adresse</h3>
+                <p>Pointe aux Piments<br>Maurice</p>
+              </div>
+            </div>
+            <div class="contact__info-block">
+              <div class="contact__info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:contact.boboisdeco@gmail.com">contact.boboisdeco@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact__info-block">
+              <div class="contact__info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <h3>Téléphone</h3>
+                <p><a href="tel:+23058559251">+230 58 559 251</a></p>
+              </div>
+            </div>
+
+            <div class="contact__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15017.762!2d57.5203!3d-20.0869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c5a7b7b6e9c1d%3A0x4b5e7f7f7f7f7f7f!2sPointe%20aux%20Piments%2C%20Mauritius!5e0!3m2!1sfr!2smu!4v1" width="100%" height="220" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localisation Bo Bois Deco"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" data-section="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="footer__logo">Bo Bois Deco</span>
+          <p class="footer__tagline">Des espaces uniques pensés pour durer.<br>Menuiserie bois & décoration sur mesure.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__nav">
+          <h4 class="footer__heading">Navigation</h4>
+          <ul class="footer__list">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#realisations">Réalisations</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__services">
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__list">
+            <li>Cuisines sur mesure</li>
+            <li>Dressings & placards</li>
+            <li>Aménagement bureau</li>
+            <li>Terrasses & pergolas</li>
+            <li>Mobilier restaurant</li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__list">
+            <li>Pointe aux Piments, Maurice</li>
+            <li><a href="mailto:contact.boboisdeco@gmail.com">contact.boboisdeco@gmail.com</a></li>
+            <li><a href="tel:+23058559251">+230 58 559 251</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Bo Bois Deco. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/content-loader.js"></script>
+
+</body>
+</html>

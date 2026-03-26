@@ -1,0 +1,71 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: fr
+
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+collections:
+  # ===== RÉALISATIONS (Portfolio) =====
+  - name: "portfolio"
+    label: "Réalisations"
+    label_singular: "Réalisation"
+    description: "Gérer les projets affichés dans la galerie"
+    folder: "content/portfolio"
+    create: true
+    slug: "{{slug}}"
+    sortable_fields: ["order", "title"]
+    fields:
+      - { name: "title", label: "Titre du projet", widget: "string", hint: "Ex: Cuisine Sur Mesure" }
+      - name: "category"
+        label: "Catégorie"
+        widget: "select"
+        options:
+          - { label: "Résidentiel", value: "residentiel" }
+          - { label: "Professionnel", value: "professionnel" }
+          - { label: "Extérieur", value: "exterieur" }
+      - { name: "image", label: "Photo du projet", widget: "image", hint: "JPEG recommandé, minimum 1200px de large" }
+      - { name: "alt", label: "Description de l'image", widget: "string", hint: "Décrivez l'image pour l'accessibilité" }
+      - { name: "order", label: "Ordre d'affichage", widget: "number", default: 0, hint: "Plus petit = affiché en premier" }
+      - { name: "featured", label: "Projet mis en avant (plus grand)", widget: "boolean", default: false }
+
+  # ===== PARAMÈTRES DU SITE =====
+  - name: "settings"
+    label: "Paramètres"
+    description: "Modifier les informations générales du site"
+    files:
+      - name: "general"
+        label: "Informations générales"
+        file: "content/settings.json"
+        fields:
+          - { name: "tagline", label: "Slogan principal", widget: "string", default: "Des espaces uniques pensés pour durer" }
+          - { name: "subtitle", label: "Sous-titre", widget: "string", default: "Décoration & Aménagement sur mesure en menuiserie bois" }
+          - name: "contact"
+            label: "Coordonnées"
+            widget: "object"
+            fields:
+              - { name: "email", label: "Email", widget: "string" }
+              - { name: "phone", label: "Téléphone", widget: "string" }
+              - { name: "address", label: "Adresse", widget: "string" }
+          - name: "social"
+            label: "Réseaux sociaux"
+            widget: "object"
+            fields:
+              - { name: "instagram", label: "URL Instagram", widget: "string", required: false }
+              - { name: "facebook", label: "URL Facebook", widget: "string", required: false }
+
+      - name: "about"
+        label: "Page À propos"
+        file: "content/about.json"
+        fields:
+          - { name: "description", label: "Description de l'entreprise", widget: "text" }
+          - { name: "description2", label: "Description (suite)", widget: "text" }
+          - { name: "vision_title", label: "Titre Vision", widget: "string", default: "Notre Vision" }
+          - { name: "vision_text", label: "Texte Vision", widget: "text" }
+          - { name: "objectif_title", label: "Titre Objectif", widget: "string", default: "Notre Objectif" }
+          - { name: "objectif_text", label: "Texte Objectif", widget: "text" }
+          - { name: "approche_title", label: "Titre Approche", widget: "string", default: "Notre Approche" }
+          - { name: "approche_text", label: "Texte Approche", widget: "text" }
+          - { name: "image", label: "Photo À propos", widget: "image" }
