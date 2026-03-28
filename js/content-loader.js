@@ -1,7 +1,7 @@
 /* ============================================
-   Bo Bois Deco — CMS Content Loader
-   Loads content from JSON data files edited
-   via Decap CMS and injects into the page.
+   Bo Bois Deco — Content Loader
+   Loads content from JSON data files and
+   injects into the page.
    Falls back to static HTML if fetch fails.
    ============================================ */
 

@@ -1,7 +1,6 @@
 /* ============================================
    Bo Bois Deco — Portfolio Gallery
    Filtering + Lightbox
-   Re-initializable for CMS content loader
    ============================================ */
 
 function initPortfolio() {

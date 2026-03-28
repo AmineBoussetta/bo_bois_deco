@@ -1,0 +1,11 @@
+# Deny direct access to config file
+<Files "config.php">
+  Require all denied
+</Files>
+
+<Files "auth.php">
+  Require all denied
+</Files>
+
+# Redirect /admin/ to login
+DirectoryIndex index.php
